@@ -1,7 +1,7 @@
 /**
  * Parallax scrolling
  */
-$(document).ready(function() {
+(function ($) {
     var $scrollTop = $('[data-parallax-top]');
     var $scrollBottom = $('[data-parallax-bottom]');
     var scrollPosition = 0;
@@ -63,11 +63,4 @@ $(document).ready(function() {
         window.requestAnimationFrame(_callback);
     }
 
-<<<<<<< HEAD
 }(jQuery));
-=======
-    $(window).on('scroll', function () {
-        _throttle(window.requestAnimationFrame(_callback), 100, false);
-    });
-});
->>>>>>> (function($) {... changed to $(document).ready(function () {...
